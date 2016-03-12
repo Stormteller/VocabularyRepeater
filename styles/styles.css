@@ -1,0 +1,42 @@
+#addWordBtn {
+    background-color: rgba(255, 69, 69, 1);
+    text-align: center;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    width: 2em;
+    height: 2em;
+    display: block;
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    margin-left: -2em;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.btnText {
+    color: white;
+    font: bold 1.5em sans-serif;
+    margin: 0.1675em 0 0 0;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.saveBtn {
+    background-color: #3D84FF;
+    border: none;
+    float: left;
+    margin: 5px 0 5px 0;
+    color: white;
+    border-radius: 2px;
+}
+
+.settingBtn {
+    color: #BEC1C4;
+    float: right;
+    margin-top: 3px;
+}
+
+.title {
+    font: bold 1.2em Calibri sans-serif;
+}

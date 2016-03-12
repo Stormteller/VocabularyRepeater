@@ -1,0 +1,45 @@
+{
+    "manifest_version" : 2,
+
+    "name" : "VocabularyRepeater",
+    "version" : "0.1.1",
+    "icons" : {
+        "16" : "images/16.png",
+        "128" : "images/128.png"
+    },
+
+    "permissions" : [
+        "notifications",
+        "tabs",
+        "contextMenus",
+        "storage",
+        "unlimitedStorage"
+    ],
+
+    "content_scripts": [
+    {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["scripts/selection.js"],
+        "run_at": "document_end",
+        "all_frames": true,
+        "css": ["styles/styles.css"]
+    }
+    ],
+
+    "background": {
+        "scripts": ["scripts/background.js"]
+    },
+
+    "browser_action" : {
+        "default_popup" : "templates/popup.html",
+        "default_icon" : "images/16.png",
+        "default_title" : "OwnVocabulary"
+    },
+
+    "web_accessible_resources": [
+        "images/*.png",
+        "scripts/popup.js",
+        "templates/*",
+        "styles/*"
+    ]
+}
